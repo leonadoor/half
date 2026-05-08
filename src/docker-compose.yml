@@ -5,6 +5,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
+      - "1455:1455"
     environment:
       - HALF_ADMIN_PASSWORD=${HALF_ADMIN_PASSWORD:?HALF_ADMIN_PASSWORD is required. See .env.example.}
       - HALF_SECRET_KEY=${HALF_SECRET_KEY:?HALF_SECRET_KEY is required. See .env.example.}
