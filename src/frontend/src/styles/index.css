@@ -38,14 +38,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 /* ===== Layout ===== */
 .app-layout {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .sidebar {
   width: 240px;
+  height: 100vh;
   background: var(--color-sidebar);
   color: var(--color-sidebar-text);
   display: flex;
@@ -124,6 +132,7 @@ body {
 
 .main-content {
   flex: 1;
+  height: 100vh;
   overflow-y: auto;
   min-width: 0;
 }
